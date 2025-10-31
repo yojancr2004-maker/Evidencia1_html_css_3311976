@@ -13,20 +13,46 @@
 ---
 <label>{etiqueta}</label>
 <div>
-    <input
+    <div id="Cedula">
+        <input
         type="radio"
         name="rbg"
         id="radio1"
-    /> CC
+    /> <strong>CC</strong>
+    </div>
+    <div id="TarjetaIdentidad">
     <input
         type="radio"
         name="rbg"
         id="radio2"
-    /> TI
+    /> <strong>TI</strong>
+    </div>
+    <div id="CedulaExtran">
     <input
         type="radio"
         name="rbg"
         id="radio3"
-    /> CE
+    /> <strong>CE</strong>
+    </div>
 
 </div>
+<style>
+    #Cedula{
+        background-color: coral;
+        /*display:
+          determina como una etiqueta
+          se comportara en cuanto a:display:
+          -largo
+          -ancho
+          -ubicación*/
+        display: inline;
+    }
+    #TarjetaIdentidad{
+        background-color: darkcyan;
+        display: inline;
+    }
+    #CedulaExtran{
+        background-color: cornflowerblue;
+        display: inline;
+    }
+</style>

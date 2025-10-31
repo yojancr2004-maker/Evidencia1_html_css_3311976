@@ -7,11 +7,45 @@ interface Props {
 ---
 <label>{etiqueta}</label>
 <select>
-    <option>Cali</option>
-    <option>Bogotá</option>
-    <option>Medellin</option>
-    <option>Cartagena</option>
-    <option>Tunja</option>
-    <option>Bucaramanga</option>
-    <option>Barranquilla</option>
+    <option id="Cali">Cali</option>
+    <option id="Bogota">Bogotá</option>
+    <option id="Medellin">Medellin</option>
+    <option id="Cartagena">Cartagena</option>
+    <option id="Tunja">Tunja</option>
+    <option id="Bucaramanga">Bucaramanga</option>
+    <option id="Barranquilla">Barranquilla</option>
 </select>
+<style>
+    /* estilo de identificador
+       solo aplica a etiquetas
+       que tengan el atributo id
+       con el mismo nombre de id
+       NOTA IMPORTANTE: SOLO DEBE HABER UN
+       ID IGUAL EN TODA LA PAGINA
+    */
+    #Cali{
+        color: darkslategrey;
+    }
+    #Bogota{
+        color:rgb(107, 32, 32);
+    }
+    #Medellin{
+        color: blue;
+    }
+    #Cartagena{
+        color: cornflowerblue;
+    }
+    #Tunja{
+        color: darkgoldenrod;
+    }
+    #Bucaramanga{
+        color: darkred;
+    }
+    #Barranquilla{
+        color: darkseagreen;
+    }
+    select{
+        border: 2px rgb(226, 156, 4) outset;
+    }
+
+</style>
