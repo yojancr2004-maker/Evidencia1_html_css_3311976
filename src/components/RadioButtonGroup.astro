@@ -11,24 +11,25 @@
     //para recibir la etiqueta
     const  etiqueta  = Astro.props.etiqueta;
 ---
-<label>{etiqueta}</label>
-<div>
+
+<div class="rbg">
+    <label>{etiqueta}</label>
     <div id="Cedula">
-        <input
+        <input class="radio-bot"
         type="radio"
         name="rbg"
         id="radio1"
     /> <strong>CC</strong>
     </div>
     <div id="TarjetaIdentidad">
-    <input
+    <input class="radio-bot"
         type="radio"
         name="rbg"
         id="radio2"
     /> <strong>TI</strong>
     </div>
-    <div id="CedulaExtran">
-    <input
+    <div id="CedulaExtrangeria">
+    <input class="radio-bot"
         type="radio"
         name="rbg"
         id="radio3"
@@ -37,22 +38,38 @@
 
 </div>
 <style>
-    #Cedula{
-        background-color: coral;
+    .rbg{
+        background-color: rgb(209, 211, 211);
+         border-color:rgb(122, 122, 122);
+        border-width: 3px;
+        border-style: solid;
+        border-radius: 15px;
+        margin-left: 20px;
+        margin-top: 20px;
+        width: 90%;
+    }
+    #Cedula .radio-bot{
+        display: inline-block;
         /*display:
           determina como una etiqueta
           se comportara en cuanto a:display:
           -largo
           -ancho
           -ubicación*/
-        display: inline;
+        width:20px;
+        height: auto;
     }
-    #TarjetaIdentidad{
+    #TarjetaIdentidad .radio-bot{
         background-color: darkcyan;
-        display: inline;
+        display: inline-block;
+        height: auto;
+        width: 20px;
     }
-    #CedulaExtran{
-        background-color: cornflowerblue;
-        display: inline;
+    #CedulaExtrangeria .radio-bot {
+        background-color: rgb(240, 13, 13);
+        display: inline-block;
+        width: 20px;
+        height: auto;
+
     }
 </style>

@@ -1,3 +1,7 @@
+---
+import "./FormLayout.css";
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,18 +10,22 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Formulario de registro</h1>
-    <slot name="subtitulo"/>
-    <slot name="caja-texto"/>
-    <br/>
-    <slot name="caja-apellido"/>
-    <br/>
-    <slot name="caja-email"/>
-    <br/>
-    <slot name="grupo-radio"/>
-    <br/>
-    <slot name="select-ciudades"/>
-    <br/>
-    <slot name="boton-envio"/>
+    <h1 class="Titulo">Formulario de registro</h1>
+    <div class="form">
+        <slot class="subtitulo" slot name="subtitulo"/>
+
+        <slot name="caja-texto"/>
+
+        <slot name="caja-apellido"/>
+
+        <slot name="caja-email"/>
+
+        <slot name="grupo-radio"/>
+
+        <slot name="select-ciudades"/>
+
+        <slot name="boton-envio"/>
+    </div>
+
 </body>
 </html>

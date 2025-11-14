@@ -8,8 +8,8 @@ import FormLayout from "../layouts/FormLayout.astro";
 
 ---
 <FormLayout>
-	<h2 slot="subtitulo">Ingrese información</h2>
-	<InputText 
+	<h2 class="subtitulo" slot="subtitulo">Ingrese información</h2>
+	<InputText
 	etiqueta="Nombre Completo"
 	slot="caja-texto"
 />
@@ -35,3 +35,13 @@ import FormLayout from "../layouts/FormLayout.astro";
 	etiqueta="Enviar"
 	slot="boton-envio"
 />
+<style>
+.subtitulo{
+    font-family: Arial, Helvetica, sans-serif;
+	font-weight: 300px;
+    font-size: 22px;
+    color: blue;
+	margin-left: 150px;
+	margin-top: 20px;
+}
+</style>
